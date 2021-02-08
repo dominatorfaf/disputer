@@ -12,7 +12,4 @@ class User {
         this.email = email
         this.avatar = avatar
     }
-
-    
-
 }
