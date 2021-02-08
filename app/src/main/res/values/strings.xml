@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Disputer</string>
-    <string name="hello_text">Hello, %1$s!</string>
+    <string name="user">%1$s %2$s</string>
+    <string name="username">\@%1$s</string>
 </resources>
