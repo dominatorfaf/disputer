@@ -14,7 +14,12 @@ class WelcomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_welcome)
 
-        val user = User()
+        val user: User = if(intent != null && intent.extras != null){
+            intent.getSerializableExtra("user") as User
+        } else {
+            User()
+        }
+
 
         val helloText: TextView = findViewById<TextView>(R.id.hello)
         val name: TextView = findViewById<TextView>(R.id.name)

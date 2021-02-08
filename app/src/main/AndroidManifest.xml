@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".profile.EditProfileActivity"></activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".profile.EditProfileActivity" />
         <activity
             android:name=".profile.WelcomeActivity"
             android:screenOrientation="portrait"
