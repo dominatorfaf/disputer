@@ -1,8 +1,9 @@
 package com.android.disputer.schema
 
 import com.android.disputer.enums.Avatar
+import java.io.Serializable
 
-class User {
+class User : Serializable{
     var username: String
 
     var firstName: String

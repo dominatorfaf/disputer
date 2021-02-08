@@ -8,8 +8,22 @@
     android:background="@color/nightBackground"
     tools:context=".profile.WelcomeActivity">
 
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textAlignment="center"
+        android:textColor="@color/welcomeColor"
+        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.619" />
+
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/avatar"
         android:layout_width="19dp"
         android:layout_height="19dp"
         android:layout_marginEnd="12dp"
@@ -31,8 +45,8 @@
         android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="324dp"
-        android:text="TextView"
+        android:layout_marginTop="400dp"
+        android:text="Name"
         android:textColor="@color/welcomeColor"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,7 +58,7 @@
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="Username"
         android:textColor="@color/welcomeColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
@@ -52,23 +66,22 @@
         app:layout_constraintTop_toTopOf="@+id/name" />
 
     <Button
-        android:id="@+id/editProfile"
+        android:id="@+id/edit_profile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:textColor="@color/whiteText"
+        android:layout_marginTop="24dp"
         android:background="@drawable/custom_button_main"
-        android:textAllCaps="false"
-        android:textStyle="normal"
-        android:textSize="12sp"
-        android:paddingRight="8dp"
         android:paddingLeft="8dp"
+        android:paddingRight="8dp"
         android:text="Edit profile"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="12sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/meow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
