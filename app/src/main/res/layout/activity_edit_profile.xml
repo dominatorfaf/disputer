@@ -7,21 +7,33 @@
     android:background="@color/nightBackground"
     tools:context=".profile.EditProfileActivity">
 
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="152dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/edit_first_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/avatar_2" />
+
     <EditText
         android:id="@+id/edit_first_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="216dp"
         android:backgroundTint="@color/welcomeColor"
         android:ems="15"
-        android:inputType="textPersonName"
         android:hint="first name"
-        android:textColorHint="#805A8CF7"
+        android:inputType="textPersonName"
         android:textColor="@color/welcomeColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textColorHint="#805A8CF7"
         android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -90,4 +102,5 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
