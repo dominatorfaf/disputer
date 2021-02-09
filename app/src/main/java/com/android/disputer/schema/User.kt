@@ -1,15 +1,32 @@
 package com.android.disputer.schema
 
 import com.android.disputer.enums.Avatar
+import java.io.Serializable
 
-class User {
-    private var username: String = "Vdovicenco"
-    private var email: String = "bossfaf.vdovicenco@gmail.com"
-    private var avatar: Avatar = Avatar.GIVE_ME_COFFEE
+class User : Serializable{
+    var username: String
 
-    constructor(username: String, email: String, avatar: Avatar)  {
-        this.username = username;
+    var firstName: String
+
+    var lastName: String
+
+    var email: String
+
+    var avatar: Avatar
+
+    constructor(username: String, email: String, firstName: String, lastName: String, avatar: Avatar)  {
+        this.username = username
+        this.firstName = firstName
+        this.lastName = lastName
         this.email = email
         this.avatar = avatar
+    }
+
+    constructor() {
+        this.email = "bossfaf.vdovicenco@gmail.com"
+        this.lastName = "Vdovicenco"
+        this.firstName = "Alexandru"
+        this.avatar = Avatar.GIVE_ME_COFFEE
+        this.username = "a_vdovicenco"
     }
 }
