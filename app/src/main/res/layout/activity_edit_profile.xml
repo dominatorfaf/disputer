@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nightBackground"
+    tools:context=".profile.EditProfileActivity">
+
+    <EditText
+        android:id="@+id/edit_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:backgroundTint="@color/welcomeColor"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="first name"
+        android:textColorHint="#805A8CF7"
+        android:textColor="@color/welcomeColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="last name"
+        android:textSize="15sp"
+        android:textColorHint="#805A8CF7"
+        android:backgroundTint="@color/welcomeColor"
+        android:textColor="@color/welcomeColor"
+        android:ems="15"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_first_name" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/welcomeColor"
+        android:ems="15"
+        android:hint="email"
+        android:textColorHint="#805A8CF7"
+        android:backgroundTint="@color/welcomeColor"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_last_name" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:textColor="@color/welcomeColor"
+        android:inputType="textPersonName"
+        android:hint="username"
+        android:textColorHint="#805A8CF7"
+        android:backgroundTint="@color/welcomeColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
+
+    <Button
+        android:id="@+id/edit_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/custom_button_main"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteText"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_username" />
+</androidx.constraintlayout.widget.ConstraintLayout>
