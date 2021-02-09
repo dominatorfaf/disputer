@@ -24,13 +24,11 @@ class EditProfileActivity : AppCompatActivity() {
         var editLastName: TextView = findViewById(R.id.edit_last_name)
         var editEmail: TextView = findViewById(R.id.edit_email)
         var button: Button = findViewById(R.id.edit_profile)
-        val avatarSpinner: Spinner = findViewById(R.id.avatar_spinner)
-        
+
         editUsername.text = obj.username
         editFirstName.text = obj.firstName
         editLastName.text = obj.lastName
         editEmail.text = obj.email
-        avatarSpinner.adapter = ArrayAdapter<Avatar>(this, android.R.layout.simple_spinner_item, Avatar.values())
 
         button.setOnClickListener {
             obj.username = editUsername.text.toString()
