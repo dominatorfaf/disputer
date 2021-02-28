@@ -1,9 +1,11 @@
 package com.android.disputer.enums
 
-enum class Avatar(val pic: String) {
-    DEFAULT("avatar_1.png"),
-    CLASSY("avatar_2.png"),
-    GIVE_ME_COFFEE("avatar_3.png"),
-    NERDY("avatar_4.png"),
-    WHAT("avatar_5.png"),
+import com.android.disputer.R
+
+enum class Avatar(val pic: Int) {
+    DEFAULT(R.drawable.avatar_1),
+    CLASSY(R.drawable.avatar_2),
+    GIVE_ME_COFFEE(R.drawable.avatar_3),
+    NERDY(R.drawable.avatar_4),
+    WHAT(R.drawable.avatar_5),
 }
